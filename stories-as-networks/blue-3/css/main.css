@@ -1,5 +1,6 @@
 
 .one-button a {
+  text-align: center;
     display: flex; /* Use flexbox to center text vertically and horizontally */
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
@@ -40,6 +41,7 @@
   }
   
   .two-button a {
+    text-align: center;
     display: flex; /* Use flexbox to center text vertically and horizontally */
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */

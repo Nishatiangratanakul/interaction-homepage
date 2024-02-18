@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>main-1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/flashlight.css"> <!-- Add this line for flashlight styles -->
+</head>
+<body>
+
+<section>
+  <div class="overlay"></div>
+  <div class="light"></div>
+</section>
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <p class="h-center body-font">Enable music for a more immersive experience</p>
+        <button class="h-center body-font-small" id="enableAudioBtn">allow</button>
+    </div>
+</div>
+
+<audio id="backgroundAudio" autoplay loop>
+    <source src="sound/Rain Sound Effect Short (2 minutes) ♪.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<div class="grid-container">
+    <div class="grid-item first container h-center">
+        <p class="title-font">Rashōmon</p>
+        <p class="body-font">Ryūnosuke Akutagawa</p>
+    </div>
+
+    <div class="grid-item next-button body-font">
+        <a href="../main-2/index.html">proceed</a>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Add jQuery -->
+</body>
+</html>

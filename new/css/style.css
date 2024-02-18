@@ -143,17 +143,3 @@ body {
   cursor: pointer;
   border-radius: 7px;
 }
-
-/* Add this CSS for the flashlight effect */
-.flashlight {
-  position: fixed;
-  width: 200px; /* Adjust the size of the flashlight */
-  height: 200px; /* Adjust the size of the flashlight */
-  border-radius: 50%; /* Make the flashlight circular */
-  background: radial-gradient(circle at center, transparent 100px, black 200px); /* Create a radial gradient for the flashlight effect */
-  pointer-events: none; /* Allow clicks to go through the flashlight */
-  mix-blend-mode: screen; /* Blend mode to make everything under the flashlight visible */
-  z-index: 9999; /* Ensure the flashlight stays on top */
-  transition: all 0.1s ease; /* Add smooth transition */
-}
-

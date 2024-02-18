@@ -3,6 +3,8 @@
     grid-template-columns: repeat(11, 1fr); /* Creating 12 equal-width columns */
     grid-template-rows: repeat(9, 0.5fr); /* Creating 12 equal-width columns */
     gap: 10px; /* Adjust the gap between grid items as needed */
+    justify-content: center;
+    align-content: center;
 }
 
 .grid-item {

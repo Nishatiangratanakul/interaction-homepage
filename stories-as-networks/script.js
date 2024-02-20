@@ -114,6 +114,23 @@ window.addEventListener('resize', function() {
     generateRain();
 });
 
+// Function to update flashlight position based on mouse movement
+function updateFlashlightPosition(event) {
+    var flashlight = document.getElementById('flashlight');
+    var flashlightRadius = flashlight.offsetWidth / 2;
+
+    flashlight.style.left = event.clientX - flashlightRadius + 'px';
+    flashlight.style.top = event.clientY - flashlightRadius + 'px';
+
+    // Update the overlay position
+    var overlay = document.querySelector('.overlay');
+    overlay.style.setProperty('--cursorXPos', `${event.clientX}px`);
+    overlay.style.setProperty('--cursorYPos', `${event.clientY}px`);
+}
+
+// Add event listener for mousemove to continuously update flashlight position
+document.addEventListener('mousemove', updateFlashlightPosition);
+
 // Add event listener to enable audio after user interaction
 var enableAudioBtn = document.getElementById('enableAudioBtn');
 enableAudioBtn.addEventListener('click', function() {
@@ -123,20 +140,8 @@ enableAudioBtn.addEventListener('click', function() {
         console.error('Failed to play audio:', error);
     });
     // Hide the popup
+    var popup = document.getElementById('popup');
     popup.style.display = 'none';
     // Generate rain animation
     generateRain();
 });
-
-function trackMouse(event) {
-    document.documentElement.style.setProperty(
-      '--cursorXPos',
-      `${event.clientX}px`
-    );
-    document.documentElement.style.setProperty(
-      '--cursorYPos',
-      `${event.clientY}px`
-    );
-}
-  
-document.addEventListener('mousemove', trackMouse);

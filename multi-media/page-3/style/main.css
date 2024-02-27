@@ -1,0 +1,114 @@
+body{
+    overflow: hidden;
+}
+
+img{
+    height: 150vh;
+    transform: translateY(-30%);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(23, 1fr);
+    grid-template-rows: repeat(26, 0.25fr); 
+    gap: 10px; 
+    justify-content: center;
+    align-content: center;
+    transform: translateY(-155%);
+    display: absolute;
+
+}
+
+.grid-item {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.one{
+    grid-column: 13 / span 2; 
+    grid-row: 1;
+    letter-spacing: 8px;
+}
+
+.two {
+    grid-column: 16 / span 2;
+    grid-row: 8;
+    transform: translateX(-15%);
+    letter-spacing: -1px;
+}
+
+.three {
+    grid-column: 18 / span 2;
+    grid-row: 11; 
+    transform: translateX(15%);
+}
+
+.four{
+    grid-column: 20 / span 5; 
+    grid-row: 15; 
+    letter-spacing: 5px;
+}
+
+.five {
+    grid-column: 13 / span 5; 
+    grid-row: 16; 
+}
+
+.six {
+    grid-column: 14 / span 5; 
+    grid-row: 18; 
+    letter-spacing: 20px;
+    transform: translateX(-5%);
+}
+
+.seven{
+    grid-column: 16 / span 5; 
+    grid-row: 21; 
+    letter-spacing: 3px;
+
+}
+
+.of{
+    display: inline-block;
+}
+
+.red{
+    color: rgb(255, 60, 60);
+    display: inline-block;
+}
+
+.yellow{
+    color: rgb(255, 228, 56);
+    display: inline-block;
+}
+
+.green{
+    color: rgb(128, 217, 27);
+    display: inline-block;
+}
+
+.blue{
+    color: rgb(39, 123, 218);
+    display: inline-block;
+}
+
+.purple{
+    color: rgb(149, 82, 204);
+    display: inline-block;
+}
+
+.pink{
+    color: rgb(236, 118, 181);
+    display: inline-block;
+}
+
+.eight {
+    grid-column: 19 / span 2; 
+    grid-row: 22;
+}
+
+.nine {
+    grid-column: 17 / span 2; 
+    grid-row: 25;
+    letter-spacing: -2px;
+}

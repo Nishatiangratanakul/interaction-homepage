@@ -1,0 +1,71 @@
+body{
+    overflow: hidden;
+    background-image: url('../../assets/photos/7.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: absolute;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(23, 1fr);
+    grid-template-rows: repeat(26, 0.25fr); 
+    gap: 10px; 
+    justify-content: center;
+    align-content: center;
+    transform: translateY(50%);
+}
+
+.white {
+    color: white;
+}
+
+.grid-item {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.one{
+    transform: translate(3%, 190px);
+}
+
+.two {
+    letter-spacing: 20px;
+    transform: translate(15%, 100px);
+}
+
+.three {
+    letter-spacing: 3px;
+    transform: translate(25%, 220px);
+}
+
+.four{
+    transform: translate(65%, 300px);
+}
+
+.five-1 {
+    transform: translate(48%, 395px);
+    filter: blur(1px);
+    font-size: 16pt;}
+
+.five-2 {
+    transform: translate(43%, 370px);
+    filter: blur(1px);
+    font-size: 16pt;}
+
+.five-3 {
+    transform: translate(45%, 340px);
+    filter: blur(1px);
+    font-size: 16pt;}
+
+.five-4 {
+    transform: translate(41%, 320px);
+    filter: blur(1px);
+    font-size: 16pt;
+}
+
+.six {
+    transform: translate(79%, 370px);
+    letter-spacing: 5px;
+}

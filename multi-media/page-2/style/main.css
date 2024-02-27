@@ -1,0 +1,85 @@
+body{
+    height: 100vh;
+}
+
+img{
+    width: 28vw;
+    transform: translateX(258%);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(14, 0.25fr); 
+    gap: 10px; 
+    justify-content: center;
+    align-content: center;
+    transform: translateY(-125%);
+    display: absolute;
+
+}
+
+.grid-item {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.one{
+    grid-column: 2 / span 2; 
+    grid-row: 1;
+    letter-spacing: 5px;
+    transform: translateY(-300%);
+}
+
+.two {
+    grid-column: 6 / span 2;
+    grid-row: 3;
+    transform: rotate(20deg);
+    color: rgb(242, 90, 34);
+}
+
+.three {
+    grid-column: 7 / span 2;
+    grid-row: 4; 
+    transform: rotate(-20deg);
+    color: rgb(242, 90, 34);
+}
+
+.four{
+    grid-column: 8 / span 2; 
+    grid-row: 3; 
+    transform: rotate(10deg);
+    color: rgb(242, 90, 34);
+}
+
+.five {
+    grid-column: 9 / span 2; 
+    grid-row: 4;
+    transform: rotate(-10deg);
+    color: rgb(242, 90, 34);
+}
+
+.six {
+    grid-column: 10 / span 2;
+    grid-row: 3; 
+    transform: rotate(40deg);
+    color: rgb(242, 90, 34);
+}
+
+.seven{
+    grid-column: 9 / span 2; 
+    grid-row: 10; 
+}
+
+.eight {
+    grid-column: 11 / span 2; 
+    grid-row: 11;
+    transform: rotate(40deg);
+    letter-spacing: 2px;
+}
+
+.nine {
+    grid-column: 14 / span 2; 
+    grid-row: 13;
+    letter-spacing: -2px;
+}

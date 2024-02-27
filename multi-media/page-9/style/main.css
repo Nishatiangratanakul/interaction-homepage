@@ -1,7 +1,66 @@
-img{
-    width: 25vw;
-    height: 50vh;
-    top: 0;
-    left: 0;
+body{
+    overflow: hidden;
 }
 
+img{
+    width: 40vw;
+    transform: translate(150%, -10%);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(14, 0.25fr); 
+    gap: 10px; 
+    justify-content: center;
+    align-content: center;
+    transform: translateY(-135%);
+    display: absolute;
+
+}
+
+.grid-item {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.one{
+    grid-column: 2 / span 5; 
+    grid-row: 1;
+}
+
+.two {
+    grid-column: 5 / span 2;
+    grid-row: 7;
+    letter-spacing: -2px;
+}
+
+.three {
+    grid-column: 3 / span 2;
+    grid-row: 13; 
+}
+
+.four{
+    grid-column: 5 / span 2; 
+    grid-row: 13; 
+    letter-spacing: 15px;
+    transform: translateX(-25%);
+}
+
+.five {
+    grid-column: 1 / span 2; 
+    grid-row: 24;
+    transform: translateX(25%);
+}
+
+.six {
+    grid-column: 4 / span 2;
+    grid-row: 30; 
+    letter-spacing: 60px;
+}
+
+.seven{
+    grid-column: 10 / span 2; 
+    grid-row: 36; 
+    letter-spacing: 5px;
+}

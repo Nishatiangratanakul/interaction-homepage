@@ -1,7 +1,168 @@
-img{
-    width: 25vw;
-    height: 50vh;
-    top: 0;
-    left: 0;
+body{
+    overflow: hidden;
 }
 
+img{
+    height: 60vh;
+    transform: translate(20%, 10%);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(23, 1fr);
+    grid-template-rows: repeat(26, 0.25fr); 
+    gap: 10px; 
+    justify-content: center;
+    align-content: center;
+    transform: translateY(-45%);
+    display: absolute;
+}
+
+.grid-item {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.one{
+    grid-column: 8 / span 2; 
+    grid-row: 1;
+    transform: translateX(-7%);
+}
+
+.two-1 {
+    grid-column: 11 / span 10;
+    grid-row: 7;
+    letter-spacing: 10px;
+    filter: blur(1px);
+    transform: rotate(20deg);
+    font-size: 16pt;
+    color: white;
+}
+
+.two-2 {
+    grid-column: 11 / span 10;
+    grid-row: 7;
+    letter-spacing: 10px;
+    filter: blur(1px);
+    transform: rotate(20deg);
+    font-size: 14pt;
+}
+
+.two-3 {
+    grid-column: 11 / span 10;
+    grid-row: 2;
+    letter-spacing: 10px;
+    filter: blur(1px);
+    transform: rotate(-10deg);
+    font-size: 14pt;
+}
+
+.two-4 {
+    grid-column: 11 / span 10;
+    grid-row: 2;
+    letter-spacing: 10px;
+    filter: blur(1px);
+    transform: rotate(-10deg);
+    font-size: 14pt;
+}
+
+.two-5 {
+    grid-column: 11 / span 10;
+    grid-row: 6;
+    letter-spacing: 10px;
+    filter: blur(1px);
+    transform: rotate(-50deg);
+    transform: translate(5%, -65px);
+    font-size: 14pt;
+}
+
+.two-6 {
+    grid-column: 5 / span 10;
+    grid-row: 11;
+    letter-spacing: 30px;
+    transform: translate(-3%, 10px);
+    filter: blur(1px);
+
+}
+
+.three {
+    grid-column: 13 / span 10;
+    grid-row: 8;
+    letter-spacing: 15px; 
+    transform: translate(-3%, 10px);
+}
+
+.four{
+    grid-column: 10 / span 5; 
+    grid-row: 12; 
+    transform: translate(5%, 10px);
+}
+
+.five-1 {
+    grid-column: 12 / span 5; 
+    grid-row: 13; 
+    transform: translate(-10%, -18px);
+}
+
+.five-2 {
+    grid-column: 13 / span 5; 
+    grid-row: 13; 
+    transform: translate(-15%, -15px);
+}
+
+.five-3 {
+    grid-column: 14 / span 5; 
+    grid-row: 13; 
+    transform: translate(-20%, -20px);
+}
+
+.five-4 {
+    grid-column: 15 / span 5; 
+    grid-row: 14; 
+    transform: translate(-30%, -50px);
+}
+
+.five-5 {
+    grid-column: 16 / span 5; 
+    grid-row: 13; 
+    transform: translate(-35%, -10px);
+}
+
+.five-6 {
+    grid-column: 17 / span 5; 
+    grid-row: 13; 
+    transform: translate(-40%, -20px);
+}
+
+.six {
+    grid-column: 15 / span 5; 
+    grid-row: 22; 
+    letter-spacing: 2px;
+}
+
+.seven{
+    grid-column: 16 / span 5; 
+    grid-row: 16; 
+    letter-spacing: 10px;
+    transform: translate(-3%, 0);
+}
+
+.eight {
+    grid-column: 19 / span 5; 
+    grid-row: 16; 
+    letter-spacing: 2px;
+}
+
+.nine {
+    grid-column: 17 / span 10; 
+    grid-row: 18;
+    letter-spacing: 2px;
+}
+
+.ten {
+    grid-column: 17 / span 10; 
+    grid-row: 18;
+    letter-spacing: 2px;
+    filter: blur(1px);
+    transform: translate(1.5px, 2px);
+}

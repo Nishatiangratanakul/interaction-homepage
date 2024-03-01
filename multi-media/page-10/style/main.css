@@ -2,9 +2,20 @@ body{
     overflow: hidden;
 }
 
-img{
+.image{
     width: 35vw;
     transform: translate(0%, -5%);
+}
+
+.subway-nav {
+    transform: translate(-51.5%, 5%);
+}
+
+.train {
+    position: fixed;
+    transform: translate(666%, -360%);
+    min-width: 6%;
+    height: 18%;
 }
 
 .grid-container {

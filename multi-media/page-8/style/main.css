@@ -2,9 +2,20 @@ body{
     overflow: hidden;
 }
 
-img{
+.image{
     height: 60vh;
     transform: translate(20%, 10%);
+}
+
+.subway-nav {
+    transform: translate(-51.5%, 5%);
+}
+
+.train {
+    position: fixed;
+    transform: translate(530%, -339%);
+    min-width: 6%;
+    height: 18%;
 }
 
 .grid-container {
@@ -154,15 +165,14 @@ img{
 }
 
 .nine {
-    grid-column: 17 / span 10; 
-    grid-row: 18;
+    grid-column: 20 / span 10; 
+    grid-row: 16;
     letter-spacing: 2px;
 }
 
 .ten {
-    grid-column: 17 / span 10; 
-    grid-row: 18;
+    grid-column: 20 / span 10; 
+    grid-row: 16;
     letter-spacing: 2px;
     filter: blur(1px);
-    transform: translate(1.5px, 2px);
 }

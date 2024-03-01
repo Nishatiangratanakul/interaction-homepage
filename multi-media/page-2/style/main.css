@@ -1,11 +1,24 @@
 body{
     height: 100vh;
+    overflow: hidden;
+}
+
+.subway-nav {
+    transform: translate(-55%, 5%);
+}
+
+.train {
+    position: fixed;
+    transform: translate(102%, -236%);
+    min-width: 6%;
+    height: 18%;
 }
 
 img{
     width: 28vw;
     transform: translateX(258%);
 }
+
 
 .grid-container {
     display: grid;

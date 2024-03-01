@@ -1,7 +1,14 @@
-img{
+.image {
     width: 45vw;
     transform: translateY(-50px);
     left: 0;
+}
+
+.train {
+    position: fixed;
+    transform: translate(22%, 5%);
+    min-width: 23%;
+    height: 18%;
 }
 
 .grid-container {
@@ -12,7 +19,6 @@ img{
     justify-content: center;
     align-content: center;
     transform: translateY(-40px);
-
 }
 
 .grid-item {

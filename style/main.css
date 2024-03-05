@@ -18,4 +18,49 @@
 
 .nav-bar{
     padding: 2%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 5px 5px;
+    background: white; 
+    display: flex;
+    align-items: center; 
   }
+
+  .studio-dropdown{
+    padding: 10px;
+  }
+  
+.nav-bar .dropdown-content {
+  display: none; 
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.nav-bar .dropdown-content li {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+
+.nav-bar .dropdown-content li:hover {
+  background-color: #f1f1f1;
+}
+
+.nav-bar .studio-dropdown:hover .dropdown-content,
+.nav-bar .lab-dropdown:hover .dropdown-content {
+  display: block; 
+}
+
+h1{
+  transform: translate(1%,90%);
+  font-size: 150px;
+  line-height: 19vh;
+  display: flex;
+  align-content: center;
+}
+
+

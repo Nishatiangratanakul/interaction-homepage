@@ -1,0 +1,24 @@
+#overlay {
+    position: fixed;
+    top: 50px; /* Adjust to match the height of your nav bar */
+    left: 0;
+    width: 100%;
+    height: calc(100% - 50px); /* Adjust for the space occupied by the nav bar */
+    z-index: 1; /* Place the overlay under the nav bar */
+    pointer-events: none; /* Allow interaction with elements under the overlay */
+}
+
+.overlay-image {
+    position: fixed;
+    width: 100px; /* Adjust image size as needed */
+    z-index: 1;
+}
+
+@keyframes pop-up {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

@@ -14,6 +14,8 @@
 
 .h-center {
     text-align: center;
+    color: rgb(236, 29, 29);
+
   }
 
 .nav-bar{
@@ -21,29 +23,35 @@
     position: fixed;
     top: 0px;
     left: 0px;
-    padding: 5px 5px;
-    background: white; 
+    padding: 15px 20px;
     display: flex;
     align-items: center; 
+    width: 100vw;
+    color: rgb(236, 29, 29);
   }
 
   .studio-dropdown{
     padding: 10px;
   }
   
-.nav-bar .dropdown-content {
-  display: none; 
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  z-index: 1;
-}
+  .lab-dropdown{
+    padding-left: 50px;
+  }
+
+  .nav-bar .dropdown-content {
+    display: none; 
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
 
 .nav-bar .dropdown-content li {
-  padding: 12px 16px;
+  padding: 8px 16px;
   text-decoration: none;
   display: block;
-  color: black;
+  color: rgb(236, 29, 29);
 }
 
 .nav-bar .dropdown-content li:hover {
@@ -55,12 +63,25 @@
   display: block; 
 }
 
+.nav-bar .studio-dropdown:hover .dropdown-content {
+  display: block;
+  margin-left: -16px; /* Shift left when studio dropdown is hovered over */
+}
+
+.nav-bar .lab-dropdown:hover .dropdown-content {
+  display: block;
+  margin-left: -16px; /* Shift left when lab dropdown is hovered over */
+}
+
+
 h1{
   transform: translate(1%,90%);
   font-size: 150px;
   line-height: 19vh;
   display: flex;
   align-content: center;
+  color: rgb(236, 29, 29);
+
 }
 
 
